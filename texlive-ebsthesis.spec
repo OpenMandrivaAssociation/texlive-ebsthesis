@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/ebsthesis
+# catalog-date 2007-01-07 11:02:17 +0100
+# catalog-license lppl
+# catalog-version 1.0
 Name:		texlive-ebsthesis
 Version:	1.0
 Release:	1
@@ -45,6 +51,7 @@ by the European Business School.
 #- source
 %doc %{_texmfdistdir}/source/latex/ebsthesis/ebsthesis.dtx
 %doc %{_texmfdistdir}/source/latex/ebsthesis/ebsthesis.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -55,3 +62,5 @@ by the European Business School.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
