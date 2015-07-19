@@ -6,7 +6,7 @@
 # catalog-version 1.0
 Name:		texlive-ebsthesis
 Version:	1.0
-Release:	9
+Release:	10
 Summary:	Typesetting theses for economics
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ebsthesis
